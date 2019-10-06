@@ -1,0 +1,12 @@
+name: app
+version: 1.0.0
+description: WildFly Swarm + MySQL application
+keywords:
+  - java
+  - javaee
+  - mysql
+  - wildfly
+  - wildfly swarm
+home: https://github.com/ZeppelinOpz/workshop
+sources:
+  - https://github.com/ZeppelinOpz/workshop

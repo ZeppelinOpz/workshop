@@ -1,0 +1,17 @@
+swarm:
+  datasources:
+    data-sources:
+      ExampleDS:
+        driver-name: mysql
+        connection-url: jdbc:mysql://db:3306/employees?useSSL=false&allowPublicKeyRetrieval=true
+        user-name: mysql
+        password: mysql
+  jaeger:
+    service-name: jaeger
+    reporter-log-spans: true
+    sampler-type: const
+    sampler-parameter: 1
+    agent-host: jaeger
+  opentracing:
+    servlet:
+      skipPattern: /metrics
